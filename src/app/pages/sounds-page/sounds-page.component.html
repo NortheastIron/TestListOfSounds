@@ -38,8 +38,8 @@
         </table>
     </div>
 
-    <div class="audio-player-box">
-        <app-audio-player *ngIf="selectedRow" [audioItem]="selectedRow"></app-audio-player>
+    <div class="audio-player-box" *ngIf="selectedRow">
+        <app-audio-player  [audioItem]="selectedRow"></app-audio-player>
     </div>
     
 </div>
