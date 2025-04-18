@@ -1,0 +1,11 @@
+<mat-card class="app-audio-player">
+    <mat-card-header>
+        <mat-card-title>{{ audioItem?.name || 'Unknown Track' }}</mat-card-title>
+        <mat-card-subtitle>{{ audioItem?.description || 'Unknown' }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <audio #audioElement controls>
+            <source [src]="audioItem?.url" type="audio/mpeg">
+        </audio>
+    </mat-card-content>
+</mat-card>

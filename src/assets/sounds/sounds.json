@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Eddie Lang - April Kisses",
+        "description": "Guitar solo with piano",
+        "id": 1,
+        "url": "/audio-proxy/audio/April_Kisses.mp3"
+    },
+    {
+        "name": "Jess Stacy - In The Dark-Flashes",
+        "description": "Jazz",
+        "id": 2,
+        "url": "/audio-proxy/audio/In_The_Dark_Flashes.mp3"
+    },
+    {
+        "name": "Virginia Liston - Evil Minded Blues",
+        "description": "Blues and Jazz",
+        "id": 3,
+        "url": "/audio-proxy/audio/Evil_Minded_Blues.mp3"
+    },
+    {
+        "name": "Jimmy Rodgers - Waiting For A Train",
+        "description": "Country",
+        "id": 4,
+        "url": "/audio-proxy/audio/Waiting_For_A_Train.mp3"
+    }
+]

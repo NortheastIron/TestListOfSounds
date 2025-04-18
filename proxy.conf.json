@@ -1,0 +1,10 @@
+{
+    "/audio-proxy": {
+      "target": "https://www.openmusicarchive.org",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/audio-proxy": ""
+      }
+    }
+  }

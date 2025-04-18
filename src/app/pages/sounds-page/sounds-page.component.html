@@ -1,0 +1,45 @@
+<div class="app-sounds-page">
+
+    <div class="loading-box" *ngIf="isLoading">
+        <mat-spinner diameter="40"></mat-spinner>
+    </div>
+    
+    <div class="error-box" *ngIf="error">
+        <div class="error-box__title">
+            {{ error }}
+        </div>
+
+        <button mat-stroked-button (click)="loadData()">Reload</button>
+    </div>
+    
+    <div class="content-box">
+        <table mat-table [dataSource]="dataSource">
+
+            <ng-container [matColumnDef]="tableColumnsEnum.id">
+                <th mat-header-cell *matHeaderCellDef> ID </th>
+                <td mat-cell *matCellDef="let row"> {{ row.id }} </td>
+            </ng-container>
+    
+            <ng-container [matColumnDef]="tableColumnsEnum.description">
+                <th mat-header-cell *matHeaderCellDef> Description </th>
+                <td mat-cell *matCellDef="let row"> {{ row.description }} </td>
+            </ng-container>
+    
+            <ng-container [matColumnDef]="tableColumnsEnum.name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let row"> {{ row.name }} </td>
+            </ng-container>
+    
+            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: 'header-1'"></tr>
+            <tr mat-row
+                *matRowDef="let row; columns: displayedColumns"
+                [class.row-is-clicked]="selectedRow?.id === row.id"
+                (click)="onClickRow(row)"></tr>
+        </table>
+    </div>
+
+    <div class="audio-player-box">
+        <app-audio-player *ngIf="selectedRow" [audioItem]="selectedRow"></app-audio-player>
+    </div>
+    
+</div>
