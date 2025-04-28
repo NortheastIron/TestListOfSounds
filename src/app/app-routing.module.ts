@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SoundsPageComponent } from './pages/sounds-page/sounds-page.component';
-
+//I use redirection while there are no additional modules
 const routes: Routes = [
-  { path: '', component: SoundsPageComponent },
+  { path: '',
+    loadChildren: () => import('./features/sounds/sounds.module').then(m => m.SoundsModule)
+   },
   { path: '**', redirectTo: '/' }
 ];
 

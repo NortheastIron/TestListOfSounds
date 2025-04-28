@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs';
-import { SoundsService, TSoundElement } from 'src/app/services';
+
+import { TSoundElement } from 'src/app/core/models';
+import { SoundsService } from '../../services';
 
 enum TableColumns {
   id = 'id',
@@ -10,10 +12,10 @@ enum TableColumns {
 
 @Component({
   selector: 'app-sounds-page',
-  templateUrl: './sounds-page.component.html',
-  styleUrls: ['./sounds-page.component.less']
+  templateUrl: './sounds-list.component.html',
+  styleUrls: ['./sounds-list.component.less']
 })
-export class SoundsPageComponent implements OnInit {
+export class SoundsListComponent implements OnInit {
 
   protected tableColumnsEnum = TableColumns;
   protected displayedColumns: string[] = [

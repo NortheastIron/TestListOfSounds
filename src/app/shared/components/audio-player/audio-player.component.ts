@@ -6,7 +6,8 @@ import {
   SimpleChanges,
   ViewChild
 } from '@angular/core';
-import { TSoundElement } from 'src/app/services';
+
+import { TSoundElement } from 'src/app/core/models';
 
 @Component({
   selector: 'app-audio-player',

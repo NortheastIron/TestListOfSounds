@@ -1,11 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, delay, forkJoin, map, switchMap } from 'rxjs';
-import { TSoundElement } from './types';
+import { Observable } from 'rxjs';
+import { TSoundElement } from '../../../core/models';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class SoundsService {
 
   private _apiUrl = 'assets/sounds/sounds.json';
