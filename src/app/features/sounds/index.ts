@@ -1,0 +1,1 @@
+export { SoundsModule } from './sounds.module';

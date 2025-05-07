@@ -1,0 +1,1 @@
+export { SoundsListComponent } from './sounds-list.component'; 

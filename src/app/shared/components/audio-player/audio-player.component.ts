@@ -7,7 +7,7 @@ import {
   ViewChild
 } from '@angular/core';
 
-import { TSoundElement } from 'src/app/core/models';
+import { TSoundElement } from '@core';
 
 @Component({
   selector: 'app-audio-player',

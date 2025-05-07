@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { MatCardModule } from '@angular/material/card';
 
-import { AudioPlayerComponent } from "./components/audio-player/audio-player.component";
+import { AudioPlayerComponent } from "./components";
 
 @NgModule({
     declarations: [AudioPlayerComponent],

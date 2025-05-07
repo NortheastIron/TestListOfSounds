@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { finalize } from 'rxjs';
 
-import { TSoundElement } from 'src/app/core/models';
-import { SoundsService } from '../../services';
+import { TSoundElement } from '@core';
+import { SoundsService } from '@features/sounds/services';
 
 enum TableColumns {
   id = 'id',
